@@ -1,0 +1,29 @@
+body {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2em;
+    /* border: 2px solid black; */
+}
+
+.messages {
+    text-align: center;
+}
+
+.success {
+    color: green;
+    border: 2px solid green;
+    border-radius: 2em;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+
+.error {
+    color: red;
+    border: 2px solid red;
+    border-radius: 2em;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
