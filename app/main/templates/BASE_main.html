@@ -28,6 +28,9 @@
 
 <body>
     <div class="body_container">
+
+        <button><a href="{{ url_for('main.index') }}">Reload</a></button>
+        <br>
         
         <div class="messages">
             {% with messages = get_flashed_messages(with_categories=true) %}

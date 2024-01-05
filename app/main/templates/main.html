@@ -8,6 +8,29 @@
 
 <div class="container">
     <h1>DASHBOARD</h1>    
+
+    {% if forms %}
+        {% for form in forms %}
+        <form method="POST" action="/">
+            {{ form.csrf_token }}
+            {{ form.flag.label }}: {{ form.flag }}
+            <input type="submit" value="Check">
+        </form>
+        {% endfor %}
+    {% endif %}
 </div>
+
+<br>
+
+<div class="flag_container">
+    {% if flag_one %}
+    Flag 1: <p style="text-align: center;">{{flag_one }} </p>
+    {% endif %}
+    <br>
+    {% if correct_flag %}
+    Correct Flag: <p style="text-align: center;">{{correct_flag }} </p>
+    {% endif %}
+</div>
+
 
 {% endblock %}

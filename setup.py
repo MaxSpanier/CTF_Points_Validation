@@ -6,7 +6,8 @@ setup(
     include_package_data=True,
     install_requires=[
         "flask",
-        "Flask_WTF"
+        "Flask_WTF",
+        "boto3"
     ],
 )
 
