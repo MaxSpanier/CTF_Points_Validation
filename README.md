@@ -13,6 +13,7 @@
 - [ ]  style the webpage
 - [ ]  Depoly on EC2 instance
 - [ ]  Server with nginx (ask robin)
+- [ ]  Progression bar and point system
 
 
 DB for flags solved by each user
