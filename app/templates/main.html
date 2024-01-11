@@ -9,14 +9,12 @@
 <div class="container">
     <h1>DASHBOARD</h1>    
 
-    {% if forms %}
-        {% for form in forms %}
-        <form method="POST" action="/">
+    {% if form %}
+        <form method="POST" action="/dashboard">
             {{ form.csrf_token }}
             {{ form.flag.label }}: {{ form.flag }}
             <input type="submit" value="Check">
         </form>
-        {% endfor %}
     {% endif %}
 </div>
 

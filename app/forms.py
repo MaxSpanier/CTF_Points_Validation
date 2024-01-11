@@ -7,4 +7,4 @@ class FlagForm(FlaskForm):
 
 class LoginForm(FlaskForm):
     username = StringField("Username", validators=[InputRequired()])
-    username = PasswordField("Password", validators=[InputRequired()])
+    password = PasswordField("Password", validators=[InputRequired()])
